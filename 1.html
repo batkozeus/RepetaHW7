@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 
+   - Модифицируйте готовую функцию createPostCard() из задания 
+    номер 4 (https://codepen.io/goit-fe-adv/pen/MVPaeZ) так, 
+    чтобы она использовала не createElement, а возвращала 
+    строку с тегами, которую потом можно будет поставить в документ 
+    используя innerHTML или insertAdjacentHTML. Грубо говоря - шаблон поста.
+  
+  - Модифицировать createPostCard(post) так, 
+    чтобы она принимала объект post с данными для заполнения 
+    полей в карточке. Используя createUserCard создать 
+    карточки для 3-х разных постов по данному массиву
+    объектов и повесить их в документ.
+  
+  - Создайте функцию makeCards(posts), которая принимает массив
+    объектов-карточек, вызывает функцию createPostCard(post) столько
+    раз, сколько объектов в массиве, сохраняя общий результат 
+    и возвращает строку с разметкой всех постов.
+  
+  - Повесьте все посты в какой-то уже существующий DOM-узел.
+  
+  - Подсказка: для того чтобы создать список .actions, 
+    необходимо в интерполяции использовать reduce, 
+    вернув строку с разметкой. Например:
+    
+    const string = `<ul>${[1, 2, 3].reduce((acc, x) => acc + `<li>${x}</li>`, '')}</ul>`;
+    
+    Таким образом на место вызова reduce верентся строка с тегами, 
+    которую можно поставить через innerHTML или insertAdjacentHTML.
+    
+    console.log(string); // '<ul><li>1</li><li>2</li><li>3</li></ul>'
+  -->
+
+	<div class="wrapper">
+
+		<h2>Задание</h2>
+		<p id="placeForCard"></p>
+		<hr>
+
+	</div>
+
+
+
+<script src="1.js"></script>
+</body>
+</html>
